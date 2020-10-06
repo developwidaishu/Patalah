@@ -1,0 +1,230 @@
+{% extends "layout.html" %}
+{% block content %}
+<style>
+    .form-group {
+        margin: 15px;
+
+    }
+
+    label {
+        color: whitesmoke;
+    }
+
+    .form-control {
+        background-color: #393433;
+        color: #F9812A;
+    }
+</style>
+
+<body style="background-color: black;
+ font-family: Monsterrat;">
+    <div class="container">
+        <div class="card" style="background-color: black;">
+            <div class="card-body">
+                <p class="card-text" style="text-align: center; font-size: 20px; color: white;">Fill the form below in accordance to the numbers obtained in your FNAC test. Our AI
+                    will then predict whether your cancer is benign or malignant.</p>
+                    <hr  style="border-top: 1px solid white;"> 
+            </div>
+        </div>
+        <form action="/predict" method="post">
+
+            <!--<div class="form-group row">
+            <label> Radius Mean</label>
+            <div class="col-sm-6">
+                <input type="number" name="x" class="form-control" step="any" >
+            </div>
+
+        </div>-->
+            <div class="form-group row">
+                <label for="staticEmail" class="col-sm-3 col-form-label">Radius Mean</label>
+                <div class="col-sm-6">
+                    <input type="number" step="any" name="Radius_Mean" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="staticEmail" class="col-sm-3 col-form-label">Texture Mean</label>
+                <div class="col-sm-6">
+                    <input type="number" step="any" name="Texture_Mean" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="staticEmail" class="col-sm-3 col-form-label">Perimeter Mean</label>
+                <div class="col-sm-6">
+                    <input type="number" step="any" name="Perimeter_Mean" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="staticEmail" class="col-sm-3 col-form-label">Area Mean</label>
+                <div class="col-sm-6">
+                    <input type="number" step="any" name="Area_Mean" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="staticEmail" class="col-sm-3 col-form-label">Smoothness Mean</label>
+                <div class="col-sm-6">
+                    <input type="number" step="any" name="Smoothness_Mean" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="staticEmail" class="col-sm-3 col-form-label">Compactness Mean</label>
+                <div class="col-sm-6">
+                    <input type="number" step="any" name="Compactness_Mean" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="staticEmail" class="col-sm-3 col-form-label">Concavity Mean</label>
+                <div class="col-sm-6">
+                    <input type="number" step="any" name="Concavity_Mean" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="staticEmail" class="col-sm-3 col-form-label">Concave Point Mean</label>
+                <div class="col-sm-6">
+                    <input type="number" step="any" name="Concave_Point_Mean" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="staticEmail" class="col-sm-3 col-form-label">Symmetry Mean</label>
+                <div class="col-sm-6">
+                    <input type="number" step="any" name="Symmetry_Mean" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="staticEmail" class="col-sm-3 col-form-label">Fractal Dimension Mean</label>
+                <div class="col-sm-6">
+                    <input type="number" step="any" name="Fractal_Dimension_Mean" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="staticEmail" class="col-sm-3 col-form-label">Radius Se</label>
+                <div class="col-sm-6">
+                    <input type="number" step="any" name="Radius_Se" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="staticEmail" class="col-sm-3 col-form-label">Texture Se</label>
+                <div class="col-sm-6">
+                    <input type="number" step="any" name="Texture_Se" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="staticEmail" class="col-sm-3 col-form-label">Perimeter Se</label>
+                <div class="col-sm-6">
+                    <input type="number" step="any" name="Perimeter_Se" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="staticEmail" class="col-sm-3 col-form-label">Area Se</label>
+                <div class="col-sm-6">
+                    <input type="number" step="any" name="Area_Se" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="staticEmail" class="col-sm-3 col-form-label">Smoothness Se</label>
+                <div class="col-sm-6">
+                    <input type="number" step="any" name="Smoothness_Se" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="staticEmail" class="col-sm-3 col-form-label">Compactness Se</label>
+                <div class="col-sm-6">
+                    <input type="number" step="any" name="Compactness_Se" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="staticEmail" class="col-sm-3 col-form-label">Concavity Se</label>
+                <div class="col-sm-6">
+                    <input type="number" step="any" name="Concavity_Se" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="staticEmail" class="col-sm-3 col-form-label">Concave Point Se</label>
+                <div class="col-sm-6">
+                    <input type="number" step="any" name="Concave_Point_Se" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="staticEmail" class="col-sm-3 col-form-label">Symmetry Se</label>
+                <div class="col-sm-6">
+                    <input type="number" step="any" name="Symmetry_Se" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="staticEmail" class="col-sm-3 col-form-label">Fractal Dimension Se</label>
+                <div class="col-sm-6">
+                    <input type="number" step="any" name="Fractal_Dimension_Se" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="staticEmail" class="col-sm-3 col-form-label">Radius Worst</label>
+                <div class="col-sm-6">
+                    <input type="number" step="any" name="Radius_Worst" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="staticEmail" class="col-sm-3 col-form-label">Texture Worst</label>
+                <div class="col-sm-6">
+                    <input type="number" step="any" name="Texture_Worst" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="staticEmail" class="col-sm-3 col-form-label">Perimeter Worst</label>
+                <div class="col-sm-6">
+                    <input type="number" step="any" name="Perimeter_Worst" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="staticEmail" class="col-sm-3 col-form-label">Area Worst</label>
+                <div class="col-sm-6">
+                    <input type="number" step="any" name="Area_Worst" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="staticEmail" class="col-sm-3 col-form-label">Smoothness Worst</label>
+                <div class="col-sm-6">
+                    <input type="number" step="any" name="Smoothness_Worst" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="staticEmail" class="col-sm-3 col-form-label">Compactness Worst</label>
+                <div class="col-sm-6">
+                    <input type="number" step="any" name="Compactness_Worst" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="staticEmail" class="col-sm-3 col-form-label">Concavity Worst</label>
+                <div class="col-sm-6">
+                    <input type="number" step="any" name="Concavity_Worst" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="staticEmail" class="col-sm-3 col-form-label">Concave Point Worst</label>
+                <div class="col-sm-6">
+                    <input type="number" step="any" name="Concave_Point_Worst" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="staticEmail" class="col-sm-3 col-form-label">Symmetry Worst</label>
+                <div class="col-sm-6">
+                    <input type="number" step="any" name="Symmetry_Worst" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="staticEmail" class="col-sm-3 col-form-label">Fractal Dimension Worst</label>
+                <div class="col-sm-6">
+                    <input type="number" step="any" name="Fractal_Dimension_Worst" class="form-control">
+                </div>
+            </div>
+            <div class="mx-auto col-3" style="width: 100px; margin: 30px;">
+                <button type="submit" value="submit" class="btn btn-light">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <br>
+    {{pred}}
+    <br>
+
+    {% endblock content %}
+
+</body>

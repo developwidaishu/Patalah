@@ -1,0 +1,240 @@
+{% extends "layout.html" %}
+{% block content %}
+<style>
+    .parallax {
+        background-image: url('https://docs.google.com/uc?export=download&id=1WqlCsAokVAwgaL4-A7HcQmzK_HRaKC--');
+
+        /* Set a specific height */
+        min-height: 500px;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    @media(max-width: 640px){
+
+    	.changes{
+    		height: 100%;
+
+    	}
+
+    	.changes p{
+    		font-size: 1rem;
+    	}
+    }
+
+    table {
+        margin-left: auto;
+        margin-right: auto;
+        border: 5px solid black;
+        font-family: Monsterrat;
+        border-collapse: collapse;
+        width: 60%;
+    }
+
+    td,
+    th {
+        border: 1px solid black;
+        text-align: left;
+        padding: 8px;
+        color: #EE6161;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #dddddd;
+    }
+</style>
+
+<body>
+
+    <div class="parallax"></div>
+    <div class="changes" style="
+    height: 1900px;
+    border:5px solid whitesmoke;
+background-color: black">
+        <p style="font-size:1.5rem; 
+    text-align: center; 
+    color:#DE3163;
+    margin-top: 10px;
+    margin-left: 70px;
+    margin-right: 70px;
+     font-family: Monsterrat;">
+            No Gordian Knot is untangleable, just ask Alexander the Great!
+        </p>
+        <hr style="border-top: 1px solid white;">
+        <p style="
+        font-size:1.5rem; 
+        text-align: center; 
+        color:#DE3163;
+        margin-top: 10px;
+        margin-left: 70px;
+    margin-right: 70px;
+     font-family: Monsterrat;">
+            The aspects of the solution are simple: there is a requirement for a diagnostic test that needs to be
+            performed only once followed by an accurate estimate of whether the cancer cell is benign or malignant.
+        </p>
+        <hr style="border-top: 1px solid white;">
+        <p style="
+        font-size:1.5rem; 
+        text-align: center; 
+        color:#DE3163;
+        margin-top: 10px;
+        margin-left: 70px;
+    margin-right: 70px;
+     font-family: Monsterrat;">
+            Fortunately, a more accurate diagnostic test does exist. Namely, the FNAC (Fine Needle Aspiration Cytology)
+            test. The procedure involves removal of cells from the suspicious region of a breast with the help of a
+            syringe.
+        </p>
+        <hr style="border-top: 1px solid white;">
+        <p style="
+        font-size:1.5rem; 
+        text-align: center; 
+        color:#DE3163;
+        margin-top: 10px;
+        margin-left: 70px;
+    margin-right: 70px;
+     font-family: Monsterrat;">
+            Despite what it seems like this isn’t a painful process with interviews suggestive of an experience akin to
+            that
+            of a regular vaccination. The FNAC test is also said to be statistically and clinically more efficacious.
+        </p>
+        <hr style="border-top: 1px solid white;">
+        <p style="
+        font-size:1.5rem; 
+        text-align: center; 
+        color:#DE3163;
+        margin-top: 10px;margin-left: 70px;
+    margin-right: 70px;
+     font-family: Monsterrat;">
+            Let’s compare the two tests: technically speaking diagnostic tests are graded based on their performance in
+            four
+            categories, namely Sensitivity, Specificity, Positive Predictive Value (PPV) and Negative Predictive Value
+            (NPV). These terms have been explained in easy, informal terms here.
+        </p>
+        <hr style="border-top: 1px solid white;">
+        <p style="
+        font-size:1.5rem; 
+        text-align: center; 
+        color:#DE3163;
+        margin-top: 10px;
+        margin-left: 70px;
+    margin-right: 70px;
+     font-family: Monsterrat;">
+            Note that the percentage value is directly proportional to the efficiency/performance of the test itself
+            i.e.
+            the higher the better.
+        </p>
+        <hr style="border-top: 1px solid white;">
+        <p style="
+        font-size:1.5rem; 
+        text-align: center; 
+        color:#DE3163;
+        margin-top: 10px;
+        margin-left: 70px;
+    margin-right: 70px;
+     font-family: Monsterrat;">
+            Sensitivity for the Mammogram test stands at 77.77% while it is 97.22% for the FNAC test. Mammograms have
+            a specificity of about 97.22% and FNAC has a Specificity of about 99.46%. The PPV for Mammograms is 87.5%
+            and
+            stands at about 97.22% for the FNAC test. The NPV on the other hand is 95.55% and 99.46% for Mammograms and
+            FNAC tests respectively.
+        </p>
+        <hr style="border-top: 1px solid white;">
+        <table>
+            <tr>
+                <th>Characteristic</th>
+                <th>Mammogram</th>
+                <th>FNAC</th>
+            </tr>
+            <tr>
+                <td>Sensitivity</td>
+                <td>77.77%</td>
+                <td>97.22%</td>
+            </tr>
+            <tr>
+                <td>Specificity</td>
+                <td>97.22%</td>
+                <td>99.46%</td>
+            </tr>
+            <tr>
+                <td>PPV</td>
+                <td>87.5%</td>
+                <td>97.22%</td>
+            </tr>
+            <tr>
+                <td>NPV</td>
+                <td>95.55%</td>
+                <td>97.22%</td>
+            </tr>
+        </table>
+        <hr style="border-top: 1px solid white;">
+        <p style="
+        font-size:1.5rem; 
+        text-align: center; 
+        color:#DE3163;
+        margin-top: 10px;
+        margin-left: 70px;
+    margin-right: 70px;
+     font-family: Monsterrat;">
+            The numbers don’t lie! The FNAC is indeed superior to the Mammogram when it comes to diagnostic prowess.
+            Then, why isn’t FNAC used more widely considering the fact that in terms of accuracy it seems to trump
+            mammography in every regard. The answer leads us back to our second problem: the lack of skilled and
+            experienced doctors. Although a test may perform with high accuracy the evaluation of the result is highly
+            dependent on the acumen of the cytologist. Keeping in mind the shortage of doctors in this field, the
+            diagnostic accuracy of doctors range between 77-99%, in other words it is impractical to expect a
+            consistently accurate diagnosis (again, not every hospital/Breast Cancer Treatment centre can be expected to
+            have a skilled doctor on duty).
+        </p>
+        <hr style="border-top: 1px solid white;">
+        <p style="
+        font-size:1.5rem; 
+        text-align: center; 
+        color:#DE3163;
+        margin-top: 10px;
+        margin-left: 70px;
+    margin-right: 70px;
+     font-family: Monsterrat;">
+            A combination of a FNAC/Mammogram test is often asked from the patient. But there are also follow up tests,
+            requests for more scans etc which once again falls heavy on your wallet. Sometimes doctors take too long
+            (upto 2 weeks or more) to arrive at a conclusion.
+            The problem here is that humans are confined by constraints and can’t think in multiple dimensions. While
+            skilled doctors may find it easy to cure cancer, detection is always the problem.
+        </p>
+        <hr style="border-top: 1px solid white;">
+        <p style="
+        font-size:1.5rem; 
+        text-align: center; 
+        color:#DE3163;
+        margin-top: 10px;
+        margin-left: 70px;
+    margin-right: 70px;
+     font-family: Monsterrat;">
+            This is where Patalah steps in. Based on the values obtained from the FNAC test of a breast mass our AI
+            model will predict whether your cancer is benign or malignant. Keeping the Standard Deviation in mind our
+            algorithm has an accuracy of 95-99% while as mentioned above doctors have a diagnostic accuracy of 77-99%.
+        </p>
+        <hr style="border-top: 1px solid white;">
+        <p style="
+        font-size:1.5rem; 
+        text-align: center; 
+        color:#DE3163;
+        margin-top: 10px;
+        margin-left: 70px;
+    margin-right: 70px;
+     font-family: Monsterrat;">
+            An AI is not liable to any constraints and can think in multiple dimensions thus overcoming the problem that
+            prevents accurate detection.
+        </p>
+    </div>
+</body>
+
+
+{% endblock content%}

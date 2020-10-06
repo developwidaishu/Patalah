@@ -1,0 +1,131 @@
+{%extends "layout.html" %}
+{% block content %}
+<body style="background-color: black">
+<div class="container">
+    <div class="card" style=" background-color: black;
+    color: whitesmoke;
+    font-family: Monsterrat;">
+        <div class="card-header" style="font-size: 40px;
+        text-align: center;">
+            <h4>Breast Cancer: Benign</h4>
+        </div>
+            <div class="card-body" style="font-family: Monsterrat;">
+            <p class="card-text" style="font-size: 20px;
+            text-align: center;
+            color:#DE3163;">Not all abnormalities point towards Breast Cancer. Cruelly enough, the symptoms of
+                benign cancer are very similar to that of malignant. These include but are not limited to pain or
+                swelling in the breast region, abnormal lumps or change in colour.
+            </p>
+            <hr style="border-top: 1px solid white;">
+            <p class="card-text" style="font-size: 20px;
+            text-align: center;
+            color:#DE3163;">It’s not all bad though. Statistics suggest that benign cancer cases occur more
+                frequently than actual cancer. But it should be noted that benign cancer situations may pave the way to
+                the eventual arrival of malignant cancer. Benign cancer is categorised into (the meaning of each phrase
+                is self-explanatory):
+            </p>
+            <ul style="margin-left: 5%;
+            color:#DE3163;">
+                <li>
+                    <h5>No increase in risk</h5>
+                </li>
+                <li>
+                    <h5>Slight increase in risk</h5>
+                </li>
+                <li>
+                    <h5>Moderate increase in risk</h5>
+                </li>
+            </ul>
+            <div class="card-header" style="text-align: center;">
+                <h4 style="color: whitesmoke;">Possible explanations in each category:</h4>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card" style="color:#5EFB0F;background-color:#545B52;">
+                        <div class="card-body" style="margin-left: 10%;">
+                            <h5 class="card-title">1. No increase in risk:</h5>
+                            <ul>
+                                <li>
+                                    <h6>Breast Cysts</h6>
+                                </li>
+                                <li>
+                                    <h6>Calcifications</h6>
+                                </li>
+                                <li>
+                                    <h6>Fibroadenoma</h6>
+                                </li>
+                                <li>
+                                    <h6>Central Intraductal Papilloma</h6>
+                                </li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card" style="color: #F9812A;background-color:#545B52">
+                        <div class="card-body" style="margin-left: 10%;">
+                            <h5 class="card-title">2. Slight increase in risk:</h5>
+                            <ul>
+                                <li>
+                                    <h6>Adenosis</h6>
+                                </li>
+                                <li>
+                                    <h6>Radial Scars</h6>
+                                </li>
+                                <li>
+                                    <h6>Fibromatosis</h6>
+                                </li>
+                                <li>
+                                    <h6>Flat Epithelial Atypia</h6>
+                                </li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card" style="color: #FF2400;background-color:#545B52">
+                        <div class="card-body" style="margin-left: 10%;">
+                            <h5 class="card-title">3. Moderate increase in risk:</h5>
+                            <ul>
+                                <li>
+                                    <h6>Atypical Ductal Hyperplasia</h6>
+                                </li>
+                                <li>
+                                    <h6>Lobular Neoplasia</h6>
+                                </li>
+                                <br>
+                                <br>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <p class="card-text" style="font-size: 20px;
+            text-align: center;
+            color:#DE3163;">For more information on Benign Cancer click <a href="https://www.breastcancer.org/symptoms/benign#:~:text=Benign%20(non%2Dcancerous)%20breast,those%20caused%20by%20breast%20cancer." target="_blank">here</a>.
+            </p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body" style="background-color: black;
+        color: #DE3163;
+        font-family: Monsterrat;">
+            <p style="font-size: 18px;
+            text-align: center;" class="card-text">Use the map to learn about Breast Cancer Treatment centres near your area.
+            </p>
+            <a class="btn btn-light" style="margin-left: 41%;"
+                href="https://www.google.co.in/maps/search/breast+cancer+clinics+near+me/@28.4434033,77.0558144,14z/data=!3m1!4b1"
+                target="_blank" 
+                role="button">Breast Cancer Clinics</a>
+        </div>
+    </div>
+</div>
+</body>
+
+{% endblock content%}

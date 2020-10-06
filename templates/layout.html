@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='main.css')}}" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+  <link rel="shortcut icon" type="image/png" href="{{ url_for('static', filename='favicon.png') }}">
+  <script src="https://kit.fontawesome.com/9c0eaafdbc.js" crossorigin="anonymous"></script>
+
+  <title>Patalah</title>
+  <style type="text/css">
+    
+    
+      @media(min-width: 40rem){
+        .btn{
+          position: relative;
+          margin-left: 50%;
+        }
+
+      }
+    
+  </style>
+</head>
+
+<body>
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand " href="{{ url_for('introduction') }}"><img
+          src="{{ url_for('static', filename='10.png')}}" height="80"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="{{ url_for('introduction') }}" style="font-family: Monsterrat; color: whitesmoke; font-size: 20px;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('form') }}" style="font-family: Monsterrat; color: whitesmoke; font-size: 20px;">Form</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false" style="font-family: Monsterrat; color: whitesmoke; font-size: 20px;">
+              Info
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="{{ url_for('problem') }}">
+                <h6 style=" color: #DE3163; font-family: Monsterrat; font-size: 20px;">> A Double Gordian Knot: Problems</h6>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="{{ url_for('solution') }}">
+                <h6 style=" color: #DE3163; font-family: Monsterrat; font-size: 20px;">> How Patalah aims to overcome Problems</h6>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('about') }}" style="font-family: Monsterrat; color: whitesmoke; font-size: 20px;">About Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('benign') }}" style="font-family: Monsterrat; color: whitesmoke; font-size: 20px;">Benign</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('malignant') }}" style="font-family: Monsterrat; color: whitesmoke; font-size: 20px;">Malignant</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('support') }}" style="font-family: Monsterrat; color: whitesmoke; font-size: 20px;">Support The Cause</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('signin') }}" style="font-family: Monsterrat; color: whitesmoke; font-size: 20px;">Sign In</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+
+  <div class="preload">
+    <img class="airplane" src="{{ url_for('static', filename='Logo.png')}}" alt="airplane">
+  </div>
+
+  {% block content %}
+
+  {% endblock %}
+
+
+  <div style=" border: 5px solid white;
+  background-color: black;">
+    <h4 style="text-align: center;
+    margin: 10px;
+    color: whitesmoke;
+    font-family: Monsterrat;">Wanna know how you can help?</h4>
+    <p style="text-align: center;
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: Monsterrat;">Raise awareness for Breast Cancer by sharing this poster on your social media stories!</p>
+    <p style="text-align: center;
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: Monsterrat;">Every post counts. We urge you to spread the word <3 </p>
+        <a class="btn btn-light" style="margin-left: 43%;
+        font-family: Monsterrat;"
+          href="https://docs.google.com/uc?export=download&id=1zkYrNRtGynzAd3kOY8_dRlbvl60np3T8" role="button">Click
+          here to download</a>
+        <hr style="border-top: 1px solid pink;">
+        <h4 style="text-align: center;
+    margin: 10px;
+    color: whitesmoke;
+    font-family: Monsterrat;">Get connected with us on social media!</h4>
+
+        <hr>
+
+        <footer class="page-footer font-small special-color-dark pt-4">
+
+          <!-- Footer Elements -->
+          <div class="container">
+
+            <!-- Social buttons -->
+            <ul class="list-unstyled list-inline text-center">
+              <li class="list-inline-item">
+                <a class="btn-floating btn-fb mx-1" href="https://myaccount.google.com/profile" target="_blank">
+                  <img src="{{ url_for('static', filename='google-plus.png')}}" height="30">
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-tw mx-1" href="https://www.reddit.com/" target="_blank">
+                  <img src="{{ url_for('static', filename='reddit.png')}}" height="30">
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-gplus mx-1" href="https://twitter.com/login" target="_blank">
+                  <img src="{{ url_for('static', filename='twitter.png')}}" height="30">
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-li mx-1" href="https://www.youtube.com/" target="_blank">
+                  <img src="{{ url_for('static', filename='youtube.png')}}" height="30">
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-dribbble mx-1" href="https://www.linkedin.com/" target="_blank">
+                  <img src="{{ url_for('static', filename='linkedin.png')}}" height="30">
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-dribbble mx-1" href="https://www.instagram.com/" target="_blank">
+                  <img src="{{ url_for('static', filename='instagram.png')}}" height="30">
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-dribbble mx-1" href="https://www.facebook.com/" target="_blank">
+                  <img src="{{ url_for('static', filename='facebook.png')}}" height="30">
+                </a>
+              </li>
+            </ul>
+            <!-- Social buttons -->
+
+          </div>
+          <!-- Footer Elements -->
+
+          <!-- Copyright -->
+          <div class="footer-copyright text-center py-3" style="color: whitesmoke;
+          font-family: Monsterrat;">© 2020 Copyright </div>
+          <!-- https://docs.google.com/uc?export=download&id=1zkYrNRtGynzAd3kOY8_dRlbvl60np3T8-->
+          <!-- Copyright -->
+
+        </footer>
+        <!-- Footer -->
+  </div>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-firestore.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyD1YEUQaf8tcccqzHwl7-P5tk83EpBDsCQ",
+      authDomain: "estee-lauder-dcc13.firebaseapp.com",
+      databaseURL: "https://estee-lauder-dcc13.firebaseio.com",
+      projectId: "estee-lauder-dcc13",
+      storageBucket: "estee-lauder-dcc13.appspot.com",
+      messagingSenderId: "712585434846",
+      appId: "1:712585434846:web:94d57d0e9e5c43f66ed44f"
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    //make auth and firestore refrences
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+
+  </script>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script>
+    window.addEventListener('load', () => {
+      const preload = document.querySelector('.preload');
+      preload.classList.add('preload-finish');
+    });
+  </script>
+
+  <script>
+
+    //Sign up
+    const signupForm = document.querySelector('#signup-form');
+    signupForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      //get user info
+      const email = signupForm['materialRegisterFormEmail'].value;
+      const password = signupForm['materialRegisterFormPassword'].value;
+      console.log(email);
+
+      auth.createUserWithEmailAndPassword(email, password).then(cred => {
+        console.log(cred.user);
+        signupForm.reset();
+      });
+    });
+
+    // logout
+    const logout = document.querySelector('#logout');
+    logout.addEventListener('click', (e) => {
+      auth.signOut().then(() => {
+        console.log('user signed out');
+      });
+    });
+
+
+    // login
+    const loginForm = document.querySelector('#login-form');
+    loginForm.addEventListener('submit', (e) => {
+
+      // get user info
+      const email = loginForm['login-email'].value;
+      const password = loginForm['login-password'].value;
+
+      // log the user in
+      auth.signInWithEmailAndPassword(email, password).then((cred) => {
+        console.log(cred.user);
+        // close the signup modal & reset form
+        loginForm.reset();
+      });
+
+    });
+  </script>
+
+  <script src="https://kit.fontawesome.com/9c0eaafdbc.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>

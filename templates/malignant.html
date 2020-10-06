@@ -1,0 +1,330 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<body style="background-color: black">
+<div class="container">
+	<div class="card" style=" background-color: black;
+	color: whitesmoke;
+	font-family: Monsterrat;">
+		<div class="card-header" style="font-size: 40px;
+		text-align: center;">
+			<h4>Breast Cancer: Malignant</h4>
+		</div>
+		<div class="card-body" style="font-size: 18px;">
+			<p class="card-text" style="text-align: center; color:#DE3163;">Early detection plays a big role in curing cancer. The
+				earlier a tumour is detected the
+				better a prognosis will be. It is also imperative to note that a malignant cancer tumour is not a death
+				warrant, chances of survival do exist.</p>
+			<p class="card-text" style="text-align: center; color:#DE3163;">The next step is to classify the stage of cancer. It is
+				usually expressed in numbers 0
+				- IV. The stage of cancer is determined through a surgery where a certain amount of underarm lymph nodes
+				are examined. Based on the following measurements the stage number is determined</p>
+			<hr  style="border-top: 1px solid white;">
+			<ul style="margin-left: 5%;
+			   color:#DE3163;">
+				<li>
+					<h5>
+						Tumour size/whether or not it has grown into the nearby tissue (T)
+					</h5>
+				</li>
+				<li>
+					<h5>Whether cancer is in the lymph nodes (N)</h5>
+				</li>
+				<li>
+					<h5>Whether cancer has spread to other parts of the body (M)</h5>
+				</li>
+				<li>
+					<a href="http://www.breastcancer.org/symptoms/diagnosis/cell_grade" target="_blank">
+						<h5>Tumour grade</h5>
+					</a>
+				</li>
+				<li>
+					<h5><a href="http://www.breastcancer.org/symptoms/diagnosis/hormone_status" target="_blank">Estrogen-progestron</a>
+						receptor status</h5></a>
+				</li>
+				<li>
+					<a href="http://www.breastcancer.org/symptoms/diagnosis/her2" target="_blank">
+						<h5>HER-2 Status</h5>
+					</a>
+				</li>
+				<li>
+					<a href="http://www.breastcancer.org/symptoms/testing/types/oncotype_dx" target="_blank">
+						<h5>Oncotype DX score</h5>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="accordion" style=" font-family: Monsterrat;">
+		<div class="card">
+			<div class="card-header" id="headingOne">
+				<h5 class="mb-0">
+					<p style="text-align: center;">The stage may also be described as local, regional or distant
+						depending on where the cancer has
+						spread.</p>
+				</h5>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header" id="headingTwo">
+				<h5 class="mb-0">
+					<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+						aria-expanded="false" aria-controls="collapseTwo" style="margin-left: 45%;
+						color: #002366;
+						font-size: 20px;">
+						Stage-0:
+					</button>
+				</h5>
+			</div>
+			<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+				<div class="card-body" style="background-color: black;
+				color:#DE3163;">
+					<p style="font-size: 18px;
+					text-align: center;">In stage-0 the cancer cells are confined to where they started i.e. they haven’t spread to
+						neighbouring regions of the body (includes <a
+							href="https://www.mayoclinic.org/diseases-conditions/dcis/symptoms-causes/syc-20371889" target="_blank">DCIS</a>).
+					</p>
+					<hr  style="border-top: 1px solid white;">
+					<h4 style="margin-left: 5%;">Treatment:</h4>
+					<ul style="margin-left: 5%;">
+						<li>
+							<h5>Total Masectomy</h5>
+						</li>
+						<li>
+							<h5>Lumpectomy (with/without radiation)</h5>
+						</li>
+						<li>
+							<h5>No chemotherapy required</h5>
+						</li>
+						<li>
+							<h5>No treatment to lymph nodes required</h5>
+						</li>
+						<li>
+							<h5>Hormonal therapy can be done</h5>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header" id="headingThree">
+				<h5 class="mb-0">
+					<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+						aria-expanded="false" aria-controls="collapseThree" style="margin-left: 45%;
+						color: #002366;
+						font-size: 20px;">
+						Stage-1:
+					</button>
+				</h5>
+			</div>
+			<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+				<div class="card-body" style="background-color: black;
+				color:#DE3163;">
+					<p style="font-size: 18px;
+					text-align: center;">In Stage 1, invasive breast cancer cells have spread to other breast tissues. Divided into 1A
+						and
+						1B.</p>
+					<hr  style="border-top: 1px solid white;">
+					<p style="font-size: 18px;
+					text-align: center;">In Stage 1A the cancer has not spread to remaining tissues and tumour size is <=2 cm.</p>
+							<hr  style="border-top: 1px solid white;">
+							<p style="font-size: 18px;
+							text-align: center;">In Stage 1B cancer cells (0.2 mm - 2mm) are found in lymph nodes. No cancer tumour
+								exists or there is a tumour (<= 2cm).</p>
+									<hr  style="border-top: 1px solid white;">
+									<h4 style="margin-left: 5%;">Treatment:</h4>
+									<ul style="margin-left: 5%;">
+										<li>
+											<h5>Total Masectomy</h5>
+										</li>
+										<li>
+											<h5>Lumpectomy (with/without radiation)</h5>
+										</li>
+										<li>
+											<h5>No chemotherapy required</h5>
+										</li>
+										<li>
+											<h5>No treatment to lymph nodes required</h5>
+										</li>
+										<li>
+											<h5>Hormonal therapy can be done</h5>
+										</li>
+									</ul>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header" id="headingFour">
+				<h5 class="mb-0">
+					<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
+						aria-expanded="false" aria-controls="collapseFour" style="margin-left: 45%;
+						color: #002366;
+						font-size: 20px;">
+						Stage-2:
+					</button>
+				</h5>
+			</div>
+			<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+				<div class="card-body" style="background-color: black;
+				color:#DE3163;">
+					<p style="font-size: 18px;
+					text-align: center;">Stage 2 is divided into two subcategories 2A and 2B.</p>
+					<hr  style="border-top: 1px solid white;">
+					<p style="font-size: 18px;
+					text-align: center;">2A is charecterised by either an absence of tumour however cancer cells are found in a few
+						lymph
+						nodes or the tumour measures <=2cm and has spread to lymph nodes or is>2 cm and <=5 cm and has
+								not spread to lymph nodes.</p>
+								<hr  style="border-top: 1px solid white;">
+								<p style="font-size: 18px;
+								text-align: center;">In 2B the tumor is between 2 cm to 5 cm in size; small groups of breast cancer cells
+									(0.2 mm to 2 mm are found in the lymph nodes). The cancer may have spread to 1 to 3
+									lymph nodes. It may also be possible that the tumor is larger than 5 cm but has not
+									spread to the lymph nodes.</p>
+								<hr  style="border-top: 1px solid white;">
+								<h4 style="margin-left: 5%;">Treatment:</h4>
+								<ul style="margin-left: 5%;">
+									<li>
+										<h5>Total Masectomy</h5>
+									</li>
+									<li>
+										<h5>Lumpectomy with radiation</h5>
+									</li>
+									<li>
+										<h5>Chemotherapy</h5>
+									</li>
+									<li>
+										<h5>Sentinel Lymph node biopsy</h5>
+									</li>
+									<li>
+										<h5>Axillary Lymph node biopsy</h5>
+									</li>
+									<li>
+										<h5>Hormonal Therapy</h5>
+									</li>
+									<li>
+										<h5>Targeted therapy may be used</h5>
+									</li>
+								</ul>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header" id="headingFive">
+				<h5 class="mb-0">
+					<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive"
+						aria-expanded="false" aria-controls="collapseFive" style="margin-left: 45%;
+						color: #002366;
+						font-size: 20px;">
+						Stage-3:
+					</button>
+				</h5>
+			</div>
+			<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+				<div class="card-body" style="background-color: black;
+				color:#DE3163;">
+					<p style="font-size: 18px;
+					text-align: center;">Stage 3 is divided into 3A, 3B and 3C. Either no tumor is found in the breast or the tumor
+						may be
+						of any size; cancer is found in 4 to 9 lymph nodes or in the lymph nodes.</p>
+					<hr  style="border-top: 1px solid white;">
+					<p style="font-size: 18px;
+					text-align: center;">The tumor is >5 cm; small groups of breast cancer cells (0.2 mm-2 mm) are found in the lymph
+						nodes,</p>
+					<hr  style="border-top: 1px solid white;">
+					<p style="font-size: 18px;
+					text-align: center;">The tumor is >5 cm; cancer has spread to 1 to 3 lymph nodes.</p>
+					<hr  style="border-top: 1px solid white;">
+					<h4 style="margin-left: 5%;">Treatment:</h4>
+					<ul style="margin-left: 5%;">
+						<li>
+							<h5>Total Masectomy with radiation</h5>
+						</li>
+						<li>
+							<h5>Chemotherapy</h5>
+						</li>
+						<li>
+							<h5>Lymph node removal</h5>
+						</li>
+						<li>
+							<h5>Hormonal therapy</h5>
+						</li>
+						<li>
+							<h5>Targeted therapy</h5>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header" id="headingSix">
+				<h5 class="mb-0">
+					<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix"
+						aria-expanded="false" aria-controls="collapseSix" style="margin-left: 45%;
+						color: #002366;
+						font-size: 20px;">
+						Stage-4:
+					</button>
+				</h5>
+			</div>
+			<div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+				<div class="card-body" style="background-color: black;
+				color:#DE3163;">
+					<p style="font-size: 18px;
+					text-align: center;">The last stage of Breast Cancer is characterised by the spread of cancer cells to other
+						regions
+						of the body. These include lungs, skin, bones, lymph nodes or brain.</p>
+					<hr  style="border-top: 1px solid white;">
+					<p style="font-size: 18px;
+					text-align: center;">Commonly used terms for this stage are “de novo”, “advanced” or “metastatic”.</p>
+					<hr  style="border-top: 1px solid white;">
+					<h4 style="margin-left: 5%;">Treatment:</h4>
+					<ul style="margin-left: 5%;">
+						<li>
+							<h5>Surgery</h5>
+						</li>
+						<li>
+							<h5>Radiation</h5>
+						</li>
+						<li>
+							<h5>Treatment of enlarged lymph nodes</h5>
+						</li>
+						<li>
+							<h5>Chemotherapy</h5>
+						</li>
+						<li>
+							<h5>Hormonal Therapy</h5>
+						</li>
+						<li>
+							<h5>Radiation for other parts of the body</h5>
+						</li>
+						<li>
+							<h5>Targeted Therapy</h5>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="card">
+		<div class="card-body" style="background-color: black;
+		color:#DE3163;
+		font-family: Monsterrat;">
+			<p class="card-text" style="font-size: 18px;
+			text-align: center;"> Click <a
+					href="https://www.breastcancer.org/symptoms/diagnosis/staging#:~:text=The%20stage%20of%20a%20breast,best%20treatment%20options%20for%20you" target="_blank">here</a>
+				to learn more about the stages and treatment of Breast Cancer.</p>
+
+			<hr style="border-top: 1px solid white;">
+			<p style="font-size: 18px;
+			text-align: center;" class="card-text">Use the map to learn about Breast Cancer Treatment centres near your area.
+			</p>
+			<a class="btn btn-light" style="margin-left: 41%;"
+				href="https://www.google.co.in/maps/search/breast+cancer+clinics+near+me/@28.4434033,77.0558144,14z/data=!3m1!4b1"
+				target="_blank"
+				role="button">Breast Cancer Clinics</a>
+		</div>
+	</div>
+</div>
+</body>
+{% endblock content%}

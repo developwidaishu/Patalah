@@ -1,0 +1,65 @@
+{%extends "layout.html" %}
+{% block content %}
+
+<style type="text/css">
+    
+    .links{
+        background-color: #E6645E;
+        border-radius: 8px;
+    }
+    .links a{
+        color:black;
+        text-decoration: none;
+        margin:auto;
+    }
+    .links:hover{
+        background-color: whitesmoke;
+
+
+    }
+    h6{
+        padding:2px;
+        margin-bottom: 2px;
+    }
+
+</style>
+
+<body style="background-color: black; font-family: Monsterrat;" >
+    <div class="card" style="align-items: center;
+    background-color: black;
+    color: #DE3163;">
+        <div class="card-header">
+            <h2>Support the cause</h2>
+            <hr style="border-top: 1px solid white;">
+        </div>
+        <div class="card-body">
+            <p class="card-text" style="font-size: 20px;">In 2018, it was estimated that Breast Cancer claimed the lives
+                of 627,000 women (15% of
+                all cancer deaths).</p>
+            <h2 style="margin-left: 40%;">You can help.</h2>
+            <p class="card-text" style="font-size: 20px; margin-left: 10%;"> Support Breast Cancer Victims and help in raising awareness
+                by visiting the links
+                below.</p>
+        </div>
+    </div>
+    <div class="card" style="color: #DE3163;background-color:black;
+        font-size: 30px;
+        align-items: center;">
+        <div class="card-body" style="margin-left: 10%;">
+            <h5 class="card-title">Every donation counts</h5>
+            <ul>
+                <li>
+                <button class="links"><a href="https://ww5.komen.org/" target="_blank">Breast Cancer Foundation -Komen</a></button>
+                </li>
+                <li>
+                    <button class="links"><a href="https://www.cancercare.org/diagnosis/breast_cancer" target="_blank">Cancer Care</a></button>
+                </li>
+                <li>
+                    <button class="links"><a href="https://breastcancernow.org/information-support" target="_blank">Breast Cancer Now</a></button>
+                </li>
+            </ul>
+            </p>
+        </div>
+    </div>
+</body>
+{% endblock content%}
